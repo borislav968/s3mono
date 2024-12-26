@@ -1,6 +1,6 @@
 
 # Имя проекта: берётся из имени каталога
-PROJECT = $(notdir $(CURDIR))
+PROJECT := $(notdir $(shell cd ..; pwd))
 
 # Тип МК
 MCU = atmega8
